@@ -34,7 +34,7 @@ from .base_sql import BaseModel, db
 from .provider import Provider
 
 name_collection_type = 'collection_type'
-options_collection_type = ('cube', 'collection', 'classification', 'mosaic')
+options_collection_type = ('cube', 'collection', 'classification', 'climate', 'health', 'mosaic')
 enum_collection_type = Enum(*options_collection_type, name=name_collection_type)
 enum_provider_role_type = Enum('licensor', 'producer', 'processor', 'host', name='provider_role_type')
 enum_collection_category = Enum('eo', 'sar', 'lidar', 'unknown', name='collection_category_type')
