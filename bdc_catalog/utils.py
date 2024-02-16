@@ -127,6 +127,7 @@ def create_collection(name: str, version: Any, bands: list,
         collection.is_available = kwargs.get('is_available', True)
         collection.title = kwargs.get('title', collection.name)
         collection.category = category
+        collection.metadata_ = kwargs.get('metadata')
 
         db.session.add(collection)
 
